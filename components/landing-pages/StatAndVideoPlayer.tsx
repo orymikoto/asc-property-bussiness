@@ -94,8 +94,8 @@ export default function StatAndVideoPlayer({ url_video }: Props) {
           </Text>
         </Flex>
       </Flex>
-      <div className="aspect-[18/9] lg:absolute lg:-bottom-56 w-[90%] lg:px-12">
-        <div className="rounded-[32px] w-full h-full overflow-hidden">
+      <div className=" lg:absolute lg:-bottom-56 w-[90%] lg:px-12">
+        <div className="aspect-[18/9] rounded-[32px] w-full h-full overflow-hidden">
           <ReactPlayer width="100%" height="100%" url={url_video} />
         </div>
         {/* <video
