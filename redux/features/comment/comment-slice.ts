@@ -10,7 +10,7 @@ type T_Property_Initial_State = {
 const initialState: T_Property_Initial_State = {
   comment: {
     komentar: "",
-    foto_profil: null,
+    foto_profil: undefined,
     nama: "",
     pekerjaan: "",
   },

@@ -21,17 +21,18 @@
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-redux": "^9.1.0",
-    "tailwind-scrollbar": "^3.1.0"
+    "swiper": "^11.0.7",
+    "tailwind-scrollbar": "^3.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "autoprefixer": "^10"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
-    "postcss": "^8",
-    "tailwindcss": "^3",
     "typescript": "^5"
   }
 }

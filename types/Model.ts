@@ -1,18 +1,18 @@
 export type T_Property = {
   harga: Number;
-  gambar: String | null;
-  nama_property: String;
-  alamat: String;
+  gambar?: string;
+  nama_property: string;
+  alamat: string;
   fasilitas: {
     tempat_tidur: Number;
     kamar_mandi: Number;
-    parkir_kendaraan: Number | null;
+    parkir_kendaraan?: Number;
   };
 };
 
 export type T_Comment = {
-  komentar: String;
-  foto_profil: String | null;
-  nama: String;
-  pekerjaan: String;
+  komentar: string;
+  foto_profil?: string;
+  nama: string;
+  pekerjaan: string;
 };

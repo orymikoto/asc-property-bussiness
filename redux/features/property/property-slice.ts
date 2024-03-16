@@ -10,13 +10,13 @@ type T_Property_Initial_State = {
 const initialState: T_Property_Initial_State = {
   property: {
     harga: 0,
-    gambar: null,
+    gambar: undefined,
     nama_property: "",
     alamat: "",
     fasilitas: {
       tempat_tidur: 0,
       kamar_mandi: 0,
-      parkir_kendaraan: null,
+      parkir_kendaraan: undefined,
     },
   },
   loading: false,

@@ -13,14 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "palete-1": "#0C0C1D",
+        "palete-2": "#FFFFFF",
+        "palete-3": "#4B73FF",
+        "palete-4": "#F7F9FB",
+      },
       fontFamily: {
         base: ["Plus Jakarta Sans", "sans-serif"],
-        MagicRetro: ["MagicRetro"],
-        ChopinScript: ["ChopinScript"],
-        "bebas-neue": ["Bebas Neue", "sans-serif"],
-        "josefin-sans": ["Josefin Sans", "sans-serif"],
-        "roboto-mono": ["Roboto Mono", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
   },

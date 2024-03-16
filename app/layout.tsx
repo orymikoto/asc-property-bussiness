@@ -1,9 +1,10 @@
 import StoreProvider from "@/redux/StoreProvider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
+import { ChakraProvider } from "@chakra-ui/react";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ASC Property",
@@ -19,8 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <StoreProvider>{children}</StoreProvider>
+      <body>
+        <StoreProvider>
+          <ChakraProvider>{children}</ChakraProvider>
+        </StoreProvider>
       </body>
     </html>
   );
