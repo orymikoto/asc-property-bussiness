@@ -23,11 +23,11 @@ export default function NavBar({}: Props) {
               className="w-16"
             />
             {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" > */}
-            <span className="self-center text-2xl whitespace-nowrap text-palete-1 font-bold">
+            <span className="self-center text-2xl whitespace-nowrap text-palete-1 font-bold hidden sm:flex">
               ASC
             </span>
           </a>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-x-2">
             <button
               type="button"
               className="text-white bg-palete-1 font-medium rounded-lg lg:px-8 px-4 py-2 text-center hover:text-palete-1 hover:bg-white hover:shadow-md hover:shadow-palete-1/50 duration-200"
@@ -38,9 +38,8 @@ export default function NavBar({}: Props) {
               data-collapse-toggle="navbar-sticky"
               onClick={() => setOpen(!open)}
               type="button"
-              className="inline-flex items-center w-10 h-10 justify-center text-sm text-palete-1 rounded-lg md:hidden hover:bg-gray-100"
+              className="inline-flex items-center w-10 h-10 justify-center text-sm text-palete-1 rounded-lg lg:hidden hover:bg-gray-100"
             >
-              <span className="sr-only">Open main menu</span>
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
@@ -58,12 +57,12 @@ export default function NavBar({}: Props) {
               </svg>
             </button>
           </div>
-          <div className="items-center flex-1 justify-between hidden w-full md:flex font-medium px-8">
-            <ul className="flex items-center gap-x-4">
+          <div className="items-center flex-1 justify-between hidden w-full lg:flex font-medium px-8">
+            <ul className="flex items-center gap-x-8">
               <li>
                 <a
                   href="#home"
-                  className="block py-2 px-3 text-palete-1 hover:text-palete-3 duration-200"
+                  className="block py-2 px-4 text-palete-1 hover:text-palete-3 duration-200"
                   aria-current="page"
                 >
                   Home
@@ -99,7 +98,7 @@ export default function NavBar({}: Props) {
         <div
           className={
             open
-              ? "absolute md:hidden bg-white rounded-xl p-4 w-[150px] z-20 shadow-md top-16 right-2"
+              ? "absolute lg:hidden bg-white rounded-xl p-4 w-[150px] z-20 shadow-md top-16 right-2"
               : "hidden"
           }
         >
@@ -107,7 +106,7 @@ export default function NavBar({}: Props) {
             <li>
               <a
                 href="#home"
-                className="block py-2 px-3 text-palete-1 hover:text-palete-3 duration-200"
+                className="block py-2 px-4 text-palete-1 hover:text-palete-3 duration-200"
                 aria-current="page"
               >
                 Home
@@ -116,7 +115,7 @@ export default function NavBar({}: Props) {
             <li>
               <a
                 href="#about"
-                className="block py-2 px-3 text-palete-1 hover:text-palete-3 duration-200"
+                className="block py-2 px-4 text-palete-1 hover:text-palete-3 duration-200"
               >
                 About
               </a>
@@ -124,7 +123,7 @@ export default function NavBar({}: Props) {
             <li>
               <a
                 href="#service"
-                className="block py-2 px-3 text-palete-1 hover:text-palete-3 duration-200"
+                className="block py-2 px-4 text-palete-1 hover:text-palete-3 duration-200"
               >
                 Services
               </a>
@@ -132,7 +131,7 @@ export default function NavBar({}: Props) {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 text-palete-1 hover:text-palete-3 duration-200"
+                className="block py-2 px-4 text-palete-1 hover:text-palete-3 duration-200"
               >
                 Contact
               </a>
