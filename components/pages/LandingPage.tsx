@@ -47,7 +47,7 @@ export default function LandingPage({ comments, properties }: Props) {
         }
       />
       <ConnectionAndSponsors />
-      <StatAndVideoPlayer url_video="https://www.youtube.com/embed/6zgEObNc_-k?si=Qq_IW-AfS2Fodm3J?autoplay=1&loop=1" />
+      <StatAndVideoPlayer url_video="https://www.youtube.com/watch?v=QhBnZ6NPOY0" />
       {properties ? (
         <PropertyList
           properties={

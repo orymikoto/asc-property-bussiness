@@ -1,5 +1,6 @@
 import { AspectRatio, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
+import ReactPlayer from "react-player/youtube";
 
 type Props = {
   url_video: string | undefined;
@@ -94,12 +95,16 @@ export default function StatAndVideoPlayer({ url_video }: Props) {
         </Flex>
       </Flex>
       <div className="aspect-[18/9] lg:absolute lg:-bottom-56 w-[90%] lg:px-12">
-        <iframe
+        <div className="rounded-[32px] w-full h-full overflow-hidden">
+          <ReactPlayer width="100%" height="100%" url={url_video} />
+        </div>
+        {/* <video
           title="Video ASC Property Bussiness"
-          src={url_video}
-          allowFullScreen
           className="w-full h-full rounded-[2rem] "
-        />
+          controls
+        >
+          <source src={url_video} type="viedo/mp4" />
+        </video> */}
       </div>
     </section>
   );
